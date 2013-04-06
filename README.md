@@ -2,7 +2,7 @@
 
 Retrieve memory status information from the operating system.
 
-Windows-only right now.
+Windows & FreeBSD support so far.
 
 Example:
 ```go
