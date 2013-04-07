@@ -4,10 +4,12 @@
 
 package memstatus
 
+// Memory info, all values in bytes
 type MemoryStats struct {
 	Free, Used, Total uint64
 }
 
+// Returns memory information in terms of Physical, and Virtual (Swap) memory.
 func MemStatus() (Physical, Virtual MemoryStats) {
 	return osMemStatus()
 }
